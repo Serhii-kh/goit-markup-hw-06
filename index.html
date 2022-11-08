@@ -565,29 +565,42 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
-        <form class="modal-form">
-          <label for="name">Ім'я</label>
-          <input type="text" name="username" autofocus id="name" />
-          <label for="phone-number">Телефон</label>
-          <input type="tel" name="phone-number" id="phone-number" />
-          <label for="mail">Пошта</label>
-          <input type="email" name="mail" id="mail" />
-          <form class="comment-form">
-            <label>
-              Коментар
-              <textarea
-                name="comment"
-                rows="5"
-                placeholder="Введіть текст"
-              ></textarea>
-            </label>
-          </form>
 
-          <button type="submit">Відправити</button>
+        <form class="modal-form">
+          <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="form-field">
+            <label for="name">Ім'я</label>
+            <input type="text" name="username" autofocus id="name" />
+          </div>
+          <div class="form-field">
+            <label for="phone-number">Телефон</label>
+            <input type="tel" name="phone-number" id="phone-number" />
+          </div>
+          <div class="form-field">
+            <label for="email">Пошта</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-field">
+            <label for="comment">Коментар</label>
+            <textarea
+              name="comment" id="comment" placeholder="Введіть текст" class="comment-form"
+            >
+            </textarea>
+          </div>
+          <div class="form-field check-field">
+            <input class="checkbox" type="checkbox" name="checkbox" id="checkbox" />
+            <label class="check-label" for="checkbox">
+              Погоджуюся з розсилкою та приймаю
+              <a class="agreement-link" href="">Умови договору</a>
+            </label>
+          </div>
+          <div class="submit-button-thumb">
+            <button type="submit" class="submit-button">Відправити</button>
+          </div>
         </form>
       </div>
     </div>
+		
 
     <script src="./js/modal.js"></script>
   </body>
