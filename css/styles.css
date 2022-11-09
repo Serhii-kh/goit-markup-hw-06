@@ -501,8 +501,7 @@ img,
   padding-bottom: 60px;
 }
 
-.logo.footer-logo,
-.footer-input-label {
+.logo.footer-logo {
   padding-bottom: 0;
   padding-top: 0;
   margin-bottom: 20px;
@@ -547,7 +546,7 @@ img,
   flex-wrap: wrap;
   margin-left: 70px;
   margin-right: 93px;
-  padding-top: 15px;
+  margin-top: 15px;
 }
 
 .footer-container {
@@ -672,8 +671,9 @@ img,
   color: var(--main-bg-color);
 }
 
-.footer-input-field> .footer-input-label {
+.footer-input-field > .footer-input-label {
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .work-list-item,
@@ -791,16 +791,23 @@ input {
 }
 
 .footer-input-div {
+  position: relative;
   display: inline-flex;
   justify-content: space-between;
   align-items: flex-end;
 
+  height: 86px;
   width: 570px;
 
-
+  margin-top: 15px;
 }
-
 
 .footer-input {
   height: 50px;
+  margin-top: 0;
+}
+
+.icon-send {
+  margin-left: 10px;
+  fill: var(--main-bg-color);
 }
