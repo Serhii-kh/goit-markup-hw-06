@@ -618,6 +618,8 @@ img,
   justify-content: center;
   align-items: center;
 
+  z-index: 1;
+
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--main-bg-color);
@@ -668,6 +670,10 @@ img,
   text-transform: uppercase;
 
   color: var(--main-bg-color);
+}
+
+.footer-input-field> .footer-input-label {
+  text-align: left;
 }
 
 .work-list-item,
@@ -788,6 +794,13 @@ input {
   display: inline-flex;
   justify-content: space-between;
   align-items: flex-end;
+
   width: 570px;
-  height: 86px;
+
+
+}
+
+
+.footer-input {
+  height: 50px;
 }
