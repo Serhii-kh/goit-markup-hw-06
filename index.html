@@ -556,8 +556,20 @@
             </li>
           </ul>
         </div>
+        <div class="footer-input-div">
+          <div class="footer-input-field">
+            <label class="footer-input-label" for="email"
+              >Підпишіться на розсилку</label
+            >
+            <input type="email" id="email" name="email" placeholder="E-mail" />
+          </div>
+          <button type="submit" class="footer-submit-button">
+            Підписатися
+          </button>
+        </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
@@ -583,12 +595,18 @@
           <div class="form-field">
             <label for="comment">Коментар</label>
             <textarea
-              name="comment" id="comment" placeholder="Введіть текст" class="comment-form"
-            >
-            </textarea>
+              name="comment"
+              id="comment"
+            
+            ></textarea>
           </div>
           <div class="form-field check-field">
-            <input class="checkbox" type="checkbox" name="checkbox" id="checkbox" />
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+            />
             <label class="check-label" for="checkbox">
               Погоджуюся з розсилкою та приймаю
               <a class="agreement-link" href="">Умови договору</a>
@@ -600,7 +618,6 @@
         </form>
       </div>
     </div>
-		
 
     <script src="./js/modal.js"></script>
   </body>

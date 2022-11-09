@@ -102,7 +102,8 @@ img,
 }
 
 .hero-button,
-.submit-button {
+.submit-button,
+.footer-submit-button {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.875;
@@ -131,6 +132,14 @@ img,
 .submit-button {
   min-width: 200px;
   padding: 10px 52px;
+}
+
+.footer-submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 28px;
+  height: 50px;
 }
 
 .hero-section.section {
@@ -492,7 +501,8 @@ img,
   padding-bottom: 60px;
 }
 
-.logo.footer-logo {
+.logo.footer-logo,
+.footer-input-label {
   padding-bottom: 0;
   padding-top: 0;
   margin-bottom: 20px;
@@ -536,6 +546,7 @@ img,
   display: flex;
   flex-wrap: wrap;
   margin-left: 70px;
+  margin-right: 93px;
   padding-top: 15px;
 }
 
@@ -648,7 +659,8 @@ img,
   color: var(--main-bg-color);
 }
 
-.work-discription {
+.work-discription,
+.footer-input-label {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -721,7 +733,6 @@ img,
   line-height: 1.7;
 
   letter-spacing: 0.03em;
-	
 }
 
 .form-field:nth-child(-n + 4) {
@@ -741,37 +752,42 @@ img,
 textarea {
   width: 448px;
   height: 120px;
-	margin-top: 4px;
+  margin-top: 4px;
   resize: none;
-	 border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-	font-size: 16px;
+  font-size: 16px;
 }
 
 input {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-	margin-top: 4px;
+  margin-top: 4px;
 }
 
-/* label {
-	font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-
-
-letter-spacing: 0.01em;
-
-color: #757575;
-} */
-
 .checkbox {
-	background: var(--main-color);
-	margin-right: 8px;
-	margin-top: 0;
+  background: var(--main-color);
+  margin-right: 8px;
+  margin-top: 0;
 }
 
 .agreement-link {
   color: var(--focus-color);
+}
+
+.footer-input-field {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  margin-right: 10px;
+}
+
+.footer-input-div {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 570px;
+  height: 86px;
 }
