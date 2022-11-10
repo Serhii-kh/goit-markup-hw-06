@@ -762,15 +762,12 @@ textarea {
   height: 120px;
   margin-top: 4px;
   padding: 12px 16px;
+  font-size: 16px;
 
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   font-size: 12px;
-  letter-spacing: 1.2;
-
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15))
-
 }
 
 input {
@@ -816,7 +813,7 @@ input {
   padding: 15px;
 
   color: rgba(255, 255, 255, 0.6);
-  background-color: #2F303A;
+  background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
 
   transition: border 250ms var(--main-cubic-bezier);
@@ -836,7 +833,6 @@ textarea:focus {
   outline: var(--focus-color);
 
   cursor: pointer;
-
 }
 
 .icon-send {
@@ -860,4 +856,21 @@ textarea:focus {
 .input:focus + .icon-person,
 .input:hover + .icon-person {
   fill: var(--focus-color);
+}
+
+textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.footer-input-div::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: rgba(255, 255, 255, 0.6);
 }
