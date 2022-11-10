@@ -778,6 +778,9 @@ input {
 }
 
 .checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: var(--main-color);
   margin-right: 8px;
   margin-top: 0;
