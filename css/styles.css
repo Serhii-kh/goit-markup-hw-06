@@ -716,7 +716,7 @@ img,
 }
 
 .form-field {
-  /* position: relative; */
+  position: relative;
 
   display: flex;
   flex-direction: column;
@@ -738,7 +738,7 @@ img,
 }
 
 .check-label {
-  margin-left: 7px;
+	padding-left: 12px;
   font-size: 14px;
   line-height: 1.7;
 
@@ -777,6 +777,7 @@ input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
+	
 }
 
 .checkbox {
@@ -828,8 +829,7 @@ input {
 
 .input,
 textarea {
-  transition: border-color 250 ms var(--main-cubic-bezier),
-    outline 250 ms var(--main-cubic-bezier);
+  transition: border 250 ms var(--main-cubic-bezier);
 }
 
 .input:hover,
@@ -853,6 +853,7 @@ textarea:focus {
   top: 30px;
   transition: fill 250ms var(--main-cubic-bezier);
 }
+
 
 .input {
   padding-left: 42px;
@@ -884,8 +885,8 @@ textarea::placeholder {
 
 .icon-check-span {
   position: absolute;
-  left: 48px;
-  bottom: 133px;
+  left: 18px;
+  bottom: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
