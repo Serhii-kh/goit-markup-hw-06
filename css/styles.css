@@ -555,6 +555,7 @@ img,
 
 .footer-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .social-footer-list {
@@ -573,7 +574,6 @@ img,
 .footer-label-div {
   display: inline-flex;
   padding-top: 15px;
-  padding-left: 70px;
   gap: 93px;
 }
 
