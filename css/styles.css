@@ -133,6 +133,11 @@ img,
 .submit-button {
   min-width: 200px;
   padding: 10px 52px;
+  transition: background-color 250ms var(--main-cubic-bezier);
+}
+
+.submit-button:hover {
+  background-color: #188CE8;
 }
 
 .footer-submit-button {
@@ -544,10 +549,8 @@ img,
   width: 206px;
   height: 80px;
   display: flex;
-  flex-wrap: wrap;
-  margin-left: 70px;
-  margin-right: 93px;
-  margin-top: 15px;
+  flex-wrap: wrap; 
+
 }
 
 .footer-container {
@@ -566,6 +569,14 @@ img,
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
+
+.footer-label-div {
+  display: inline-flex;
+  padding-top: 15px;
+  padding-left: 70px;
+  gap: 93px;
+}
+
 
 .backdrop {
   position: fixed;
@@ -812,7 +823,6 @@ input {
   height: 86px;
   width: 570px;
 
-  margin-top: 15px;
 }
 
 .footer-input {
@@ -832,9 +842,7 @@ textarea {
   transition: border 250 ms var(--main-cubic-bezier);
 }
 
-.input:hover,
 .input:focus,
-textarea:hover,
 textarea:focus {
   border-color: var(--focus-color);
   outline: var(--focus-color);
@@ -861,8 +869,7 @@ textarea:focus {
   padding-bottom: 12px;
 }
 
-.input:focus + .icon-person,
-.input:hover + .icon-person {
+.input:focus + .icon-person {
   fill: var(--focus-color);
 }
 
